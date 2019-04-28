@@ -1,0 +1,33 @@
+body{
+    margin: 0;
+}
+
+div{
+    height: 100vh;
+    background: url('automobile.png') no-repeat, 
+    url('automobile1.png') no-repeat,
+    url('cycle.png') no-repeat,
+    url('leisure.png') no-repeat,
+    url('airplanes.png') no-repeat,
+    url('bear.png') no-repeat,
+    url('roads.png') repeat;
+    background-size: auto 15%, auto 15%, auto 10%, auto 15%, auto 20%, auto 15%, auto 100%; 
+    background-position: top 5% left 5%,
+    top 30% left 5%,
+    top 50% left 5%,
+    top 70% left 5%,
+    top 95% left 5%,
+    top 20% left -100%,
+    top 0% left 0%;
+    transition: background-position 10s ease;
+}
+
+div:hover{
+    background-position: top 5% left 60%,
+    top 30% left 75%,
+    top 50% left 30%,
+    top 70% left 45%,
+    top 95% left 90%,
+    top 20% left 200%,
+    top 0 left -2300%;
+}
